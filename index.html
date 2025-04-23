@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Super Deluxe</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <nav class="flex justify-between items-center px-5 md:px-20 lg:px-52 pt-5">
+            <div>
+                <h1 class="raleway-extrabold text-xl md:text-4xl lg:text-5xl text-[#030712]">P-Ticket</h1>
+            </div>
+            <div>
+                <ul class="flex flex-col md:flex-row lg:flex-row justify-between items-center gap-x-0 md:gap-x-10 lg:gap-x-32 lg:text-2xl text-[#030712B3]">
+                    <li class=" hover:bg-gray-400 rounded-lg p-2"><a href="">Home</a></li>
+                    <li class=" hover:bg-gray-400 rounded-lg p-2"><a href="">About</a></li>
+                    <li class=" hover:bg-gray-400 rounded-lg p-2"><a href="">Destination</a></li>
+                    <li class=" hover:bg-gray-400 rounded-lg p-2"><a href="">Search</a></li>
+                </ul>
+            </div>
+            <button class="flex justify-center items-center gap-x-1 md:gap-x-1 lg:gap-x-4 h-10 md:h-10 lg:h-14 w-20 md:w-20 lg:w-32 border-2 rounded-xl text-[#1DD100] bg-[#1DD1001A] border-[#1DD10066] raleway-bold">
+                <p class="text-xl">Bus</p>
+                <img src="images/bus-icon.png" alt="bus-icon">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <!-- banner section -->
+        <section class="">
+            <div class="bg-[url(images/banner.png)] bg-no-repeat bg-contain h-[200px] md:h-[300px] lg:h-[700px] bg-center mt-5 flex flex-col justify-center lg:gap-y-5 text-center">
+                <h1 class=" text-xl md:text-3xl lg:text-7xl text-[#FFFFFF] raleway-extrabold">End-to-End Travel with <br><span class="text-[#1DD100]">SB Super Deluxe</span></h1>
+                <p class="text-[#FFFFFF] text-sm md:text-xl lg:text-2xl md:px-28 inter-regular">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="flex justify-center items-center">
+                    <p class="text-[#030712] bg-[#1DD100]  w-36 h-16 rounded-lg flex justify-center items-center raleway-bold">Buy Ticket</p>
+                </button>
+            </div>
+
+            <!-- card -->
+             <div class="flex justify-center relative top-[-10px]">
+                <div  class="flex justify-center items-center gap-x-5 bg-[#FFFFFF] border-4 border-t-0 border-l-0 border-r-0  border-[#1DD100]  rounded-2xl h-36 w-80">
+                    <div>
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-4xl text-[#030712] inter-bold">500k+</p>
+                        <p class="text-2xl text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </main>
+</body>
+</html>
