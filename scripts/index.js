@@ -106,10 +106,57 @@ for (let seat of seats) {
 
     let availableSeat = totalSeats - selectedSeats.length;
     availableSeats.innerText = availableSeat;
+    
+
+
+    // using coupon
+    document.getElementById('apply-btn').addEventListener('click', function(){
+        let coupon = document.getElementById('coupon-code');
+        let couponText = coupon.innerText;
+        let totalPrice = document.getElementById('total-price')
+        let totalPriceText = parseInt(totalPrice.innerText)
+        if( selectedSeats.length === 4 && couponText === 'Couple 20'){
+            // 20%off
+            let offPrice = totalPriceText *20/100;
+            let updatePrice = totalPriceText - offPrice;
+            setInnerText('coupon-price', updatePrice)
+        }
+        else{
+           setInnerText('coupon-price',totalPriceText) 
+        }
+    })
+    
+    // After updating:
+updateNextButton();
+
+
   });
   
-
 }
 
+let phoneInput = document.getElementById('phone-number');
+let nextBtn = document.getElementById('next-btn');
 
-    
+//  enable Next button
+function updateNextButton() {
+    let phone = phoneInput.value.trim();
+    let isPhoneValid = phone.length >= 10;
+    let hasSelected4Seats = selectedSeats.length === 4;
+
+    if (hasSelected4Seats && isPhoneValid) {
+        nextBtn.disabled = false;
+        nextBtn.classList.remove('bg-gray-400');
+        nextBtn.classList.add('bg-green-500', 'hover:bg-green-600');
+    } else {
+        nextBtn.disabled = true;
+        nextBtn.classList.remove('bg-green-500', 'hover:bg-green-600');
+        nextBtn.classList.add('bg-gray-400');
+    }
+}
+// Listen for phone number input
+phoneInput.addEventListener('input', updateNextButton);
+
+
+
+
+

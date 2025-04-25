@@ -112,7 +112,7 @@
                       
                           <!-- Right Side -->
                           <div class="w-1/2 text-center pl-6">
-                            <p class="text-2xl font-bold tracking-wider">Couple 20</p>
+                            <p id="coupon-code" class="text-2xl font-bold tracking-wider">Couple 20</p>
                             <p class="text-sm text-[#03071266] mt-1">Coupon Code</p>
                           </div>
                         </div>
@@ -319,24 +319,24 @@
                                   placeholder="Have any coupon?"
                                   class="flex-grow px-4 py-2 text-sm text-gray-600 placeholder-gray-400 bg-transparent focus:outline-none"
                                 />
-                                <button class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-lg transition">
+                                <button id="apply-btn" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-lg transition">
                                   Apply
                                 </button>
                             </div>  
                             <div class="flex justify-between text-[#030712] inter-medium mt-5 px-5">
                                 <p>Grand Total</p>
-                                <p>BDT <span>1100</span></p>
+                                <p>BDT <span id="coupon-price"></span></p>
                             </div>
                         </div>
                         <div class="mt-5">
                             <p class="mb-2 text-xl text-[#030712] inter-semibold ">Passenger Name*</p>
                             <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="text" name="" id="" placeholder="Enter your name">
                             <p class="mb-2 text-xl text-[#030712] inter-semibold ">Phone Number*</p>
-                            <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="number" name="" id="" placeholder="Enter your phone number">
+                            <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="number" name="" id="phone-number" placeholder="Enter your phone number">
                             <p class="mb-2 text-xl text-[#030712] inter-semibold ">Email ID*</p>
                             <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="email" name="" id="" placeholder="Enter your email id">
                         </div>
-                        <button class="h-16 w-full border-2 mt-5 rounded-xl bg-[#1DD100] text-[#FFFFFF] text-2xl raleway-extrabold">Next</button>
+                        <button id="next-btn" disabled class="h-16 w-full border-2 mt-5 rounded-xl bg-[#1DD100] text-[#FFFFFF] text-2xl raleway-extrabold" >Next</button>
                         <div class="flex justify-around text-[#03071299] inter-regular text-sm mt-5">
                             <p class="underline">Terms and Conditions</p>
                             <p class="underline">Cancellation Policy</p>
@@ -381,7 +381,9 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/index.js"></script>
+    
     <script src="scripts/utility.js"></script>
+    <script src="scripts/index.js"></script>
+   
 </body>
 </html>
