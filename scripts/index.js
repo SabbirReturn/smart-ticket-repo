@@ -141,7 +141,7 @@ let nextBtn = document.getElementById('next-btn');
 function updateNextButton() {
     let phone = phoneInput.value.trim();
     let isPhoneValid = phone.length >= 10;
-    let hasSelected4Seats = selectedSeats.length === 4;
+    let hasSelected4Seats = selectedSeats.length === 1 || 2|| 3||4;
 
     if (hasSelected4Seats && isPhoneValid) {
         nextBtn.disabled = false;
@@ -158,5 +158,32 @@ phoneInput.addEventListener('input', updateNextButton);
 
 
 
+document.getElementById('next-btn').addEventListener('click', function(){
+    hide('main-container')
+    showBtn('success')
+})
 
+document.getElementById('continue-btn').addEventListener('click', function(){
+    hide('success')
+    showBtn('main-container')
+    phoneInput.value = '';
+    selectedSeats = [];
+    seatCountElement.innerText = '0';
+    seatBody.innerHTML = '';
+    totalPriceElement.innerText = '0';
+    document.getElementById('coupon-price').innerText = '0';
+    document.getElementById('coupon-code').value = '';
+    for (let seat of seats) {
+        seat.classList.remove('bg-red-400');
+    } 
+    document.getElementById('available-seats').innerText = '40';
+    updateNextButton();
+    function hide(id) {
+        document.getElementById(id).classList.add('hidden');
+    }
+    
+    function showBtn(id) {
+        document.getElementById(id).classList.remove('hidden');
+    }
+})
 
