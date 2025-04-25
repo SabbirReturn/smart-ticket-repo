@@ -36,7 +36,7 @@
                 <h1 class=" text-xl md:text-3xl lg:text-7xl text-[#FFFFFF] raleway-extrabold">End-to-End Travel with <br><span class="text-[#1DD100]">SB Super Deluxe</span></h1>
                 <p class="text-[#FFFFFF] text-sm md:text-xl lg:text-2xl md:px-28 inter-regular">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                 <button class="flex justify-center items-center">
-                    <p class="text-[#030712] bg-[#1DD100]  w-36 h-16 rounded-lg flex justify-center items-center raleway-bold">Buy Ticket</p>
+                    <p id="buy-ticket" class="text-[#030712] bg-[#1DD100]  w-36 h-16 rounded-lg flex justify-center items-center raleway-bold">Buy Ticket</p>
                 </button>
             </div>
 
@@ -127,7 +127,7 @@
          </section>
 
          <!-- schedule and seat -->
-          <section class="bg-[#F7F8F8] ">
+          <section class="bg-[#F7F8F8]" id="timeSchedule">
             <div class="border-t-4 border-[#1DD100] rounded-t-[76px]">
                 <div class="flex flex-col items-center gap-y-5 pt-12 md:pt-12 lg:pt-24">
                     <h1 class="text-3xl raleway-bold text-[#030712]">SB Super Deluxe</h1>
@@ -152,7 +152,7 @@
                                 <div>
                                     <button class="h-12 w-40 bg-[#1DD10026] text-[#1DD100] inter-medium rounded-xl">
                                         <img src="" alt="">
-                                        <p><span>40</span> Seats left</p>
+                                        <p><span id="available-seats">40</span> Seats left</p>
                                     </button>
                                 </div>
                             </div>
@@ -227,55 +227,55 @@
                         </div>
                         <div class="grid grid-cols-5 items-center gap-y-5 px-5 mb-5">
                             <p class="">A</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">A1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">A2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">A3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">A4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">A1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">A2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">A3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">A4</button>
                             <p>B</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">B1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">B2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">B3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">B4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">B1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">B2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">B3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">B4</button>
                             <p>C</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">C1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">C2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">C3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">C4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">C1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">C2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">C3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">C4</button>
                             <p>D</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">D1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">D2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">D3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">D4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">D1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">D2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">D3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">D4</button>
                             <p>E</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">E1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">E2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">E3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">E4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">E1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">E2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">E3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">E4</button>
                             <p>F</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">F1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">F2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">F3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">F4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">F1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">F2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">F3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">F4</button>
                             <p>G</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">G1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">G2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">G3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">G4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">G1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">G2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">G3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">G4</button>
                             <p>H</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">H1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">H2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">H3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">H4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">H1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">H2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">H3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">H4</button>
                             <p>I</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">I1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">I2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">I3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">I4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">I1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">I2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">I3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">I4</button>
                             <p>J</p>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">J1</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">J2</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">J3</button>
-                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg">J4</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">J1</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">J2</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">J3</button>
+                            <button class="h-10 w-20 border-2 bg-[#F7F8F8] rounded-lg seat">J4</button>
                         </div>
                     </div>
                     <div class="border-l-2 border-dotted border-gray-400"></div>
@@ -284,7 +284,7 @@
                         <h1 class="text-2xl text-[#030712] mb-5 raleway-semibold">Select Your Seat</h1>
                         <hr>
                         <div class="bg-[#F7F8F8] py-5 rounded-xl mt-5">
-                            <div class="flex justify-around text-[#030712] mb-5">
+                            <!-- <div class="flex justify-around text-[#030712] mb-5">
                                 <p>Seat <span class="bg-[#1DD100] p-1 rounded-xl">2</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
@@ -298,12 +298,21 @@
                                 <p><span>C2</span></p>
                                 <p>Economoy</p>
                                 <p><span>500</span></p>
-                            </div>
+                            </div> -->
+                            <div>
+                                <p>Seat <span id="seat-count" class="bg-green-400 px-2 rounded">0</span></p>
+                                <table>
+                                  <tbody id="seat-details">
+                                    <!-- Seat rows will be added here -->
+                                  </tbody>
+                                </table>
+                                <div class="flex justify-between font-bold">
+                                  <p>Total Price</p>
+                                  <p>BDT <span id="total-price">0</span></p>
+                                </div>
+                              </div>
+
                             <hr class="mb-2">
-                            <div class="flex justify-between text-[#030712] inter-medium  mb-5 px-14">
-                                <p>Total Price</p>
-                                <p>BDT <span>1100</span></p>
-                            </div>
                             <div class="flex items-center lg:mx-5 bg-white rounded-lg shadow-sm p-2 w-full max-w-md border-2">
                                 <input
                                   type="text"
@@ -372,5 +381,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/utility.js"></script>
 </body>
 </html>
