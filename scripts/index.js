@@ -1,3 +1,11 @@
+let toggleBtn = document.getElementById('menu-toggle');
+  let mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+
 document.getElementById('buy-ticket').addEventListener('click', function(){
     let targetSection = document.getElementById('timeSchedule');
     targetSection.scrollIntoView({behavior:"smooth"})
@@ -187,3 +195,6 @@ document.getElementById('continue-btn').addEventListener('click', function(){
     }
 })
 
+
+
+  
