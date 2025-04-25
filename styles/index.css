@@ -62,5 +62,9 @@
     font-weight: 700;
     font-style: normal;
   }
-
+  .inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
   

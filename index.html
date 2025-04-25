@@ -127,7 +127,7 @@
          </section>
 
          <!-- schedule and seat -->
-          <section class="bg-[#F7F8F8] h-[3000px] ">
+          <section class="bg-[#F7F8F8] ">
             <div class="border-t-4 border-[#1DD100] rounded-t-[76px]">
                 <div class="flex flex-col items-center gap-y-5 pt-12 md:pt-12 lg:pt-24">
                     <h1 class="text-3xl raleway-bold text-[#030712]">SB Super Deluxe</h1>
@@ -206,7 +206,7 @@
             <div>
                 <div class="flex flex-col md:flex-row lg:flex-row justify-center gap-x-5 bg-[#FFFFFF] lg:mx-72 mt-10 rounded-lg">
                     <!-- seat number -->
-                    <div class="lg:w-[600px] border-2 ml-2">
+                    <div class="lg:w-[600px] ml-2 mt-5 mb-5">
                         <h1 class="text-2xl text-[#030712]">Select Your Seat</h1>
                         <hr class="text-[#03071233] mt-5">
                         <div class="flex flex-col md:flex-row lg:flex-row justify-between px-1 mt-5 mb-5">
@@ -280,12 +280,97 @@
                     </div>
                     <div class="border-l-2 border-dotted border-gray-400"></div>
                     <!-- passenger details -->
-                    <div class="lg:w-[500px] border-2 ml-2">
-                        <h1>Select Your Seat</h1>
+                    <div class="lg:w-[500px] ml-2 mt-5 mb-5 ">
+                        <h1 class="text-2xl text-[#030712] mb-5 raleway-semibold">Select Your Seat</h1>
+                        <hr>
+                        <div class="bg-[#F7F8F8] py-5 rounded-xl mt-5">
+                            <div class="flex justify-around text-[#030712] mb-5">
+                                <p>Seat <span class="bg-[#1DD100] p-1 rounded-xl">2</span></p>
+                                <p>Class</p>
+                                <p>Price</p>
+                            </div>
+                            <div class="flex justify-around text-[#03071299] inter-regular mb-2">
+                                <p><span>C2</span></p>
+                                <p>Economoy</p>
+                                <p><span>500</span></p>
+                            </div>
+                            <div class="flex justify-around text-[#03071299] inter-regular mb-2">
+                                <p><span>C2</span></p>
+                                <p>Economoy</p>
+                                <p><span>500</span></p>
+                            </div>
+                            <hr class="mb-2">
+                            <div class="flex justify-between text-[#030712] inter-medium  mb-5 px-14">
+                                <p>Total Price</p>
+                                <p>BDT <span>1100</span></p>
+                            </div>
+                            <div class="flex items-center lg:mx-5 bg-white rounded-lg shadow-sm p-2 w-full max-w-md border-2">
+                                <input
+                                  type="text"
+                                  placeholder="Have any coupon?"
+                                  class="flex-grow px-4 py-2 text-sm text-gray-600 placeholder-gray-400 bg-transparent focus:outline-none"
+                                />
+                                <button class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-lg transition">
+                                  Apply
+                                </button>
+                            </div>  
+                            <div class="flex justify-between text-[#030712] inter-medium mt-5 px-5">
+                                <p>Grand Total</p>
+                                <p>BDT <span>1100</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <p class="mb-2 text-xl text-[#030712] inter-semibold ">Passenger Name*</p>
+                            <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="text" name="" id="" placeholder="Enter your name">
+                            <p class="mb-2 text-xl text-[#030712] inter-semibold ">Phone Number*</p>
+                            <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="number" name="" id="" placeholder="Enter your phone number">
+                            <p class="mb-2 text-xl text-[#030712] inter-semibold ">Email ID*</p>
+                            <input class="border-2 w-full h-12 pl-5 rounded-lg text-[#03071266]" type="email" name="" id="" placeholder="Enter your email id">
+                        </div>
+                        <button class="h-16 w-full border-2 mt-5 rounded-xl bg-[#1DD100] text-[#FFFFFF] text-2xl raleway-extrabold">Next</button>
+                        <div class="flex justify-around text-[#03071299] inter-regular text-sm mt-5">
+                            <p class="underline">Terms and Conditions</p>
+                            <p class="underline">Cancellation Policy</p>
+                        </div>
                     </div>
                 </div>
             </div>
           </section>
     </main>
+    <footer>
+        <div class="px-10 lg:px-56 pt-10 bg-[#030712]">
+            <div class="flex flex-col md:flex-row lg:flex-row justify-between gap-y-5">
+                <div class="mt-5">
+                    <h1 class="text-[#FFFFFF] text-4xl raleway-extrabold">P-Ticket</h1>
+                    <p class="mt-5 text-[#FFFFFFCC] text-xl">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                </div>
+                <div>
+                    <div>
+                        <p class="text-[#FFFFFF] text-2xl raleway-semibold">Download our app</p>
+                    </div>
+                    <div class="flex items-center h-14 w-36 gap-x-2 border-2 mt-5 text-[#FFFFFF]">
+                        <div>
+                            <img src="images/playstore.png" alt="">
+                        </div>
+                        <div>
+                            <p>Get it on</p>
+                            <h1>Google Play</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dotted mt-5">
+            <div class="flex flex-col md:flex-row lg:flex-row justify-between gap-y-2 mt-5">
+                <div>
+                    <p class="text-[#FFFFFFB3]">&copy; All rights reserved, P-Ticket Services Limited. 2024</p>
+                </div>
+                <div class="flex justify-around gap-x-5 text-[#FFFFFF]">
+                    <p>Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
